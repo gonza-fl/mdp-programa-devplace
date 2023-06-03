@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section h1 {
+  text-align: center;
+  border: medium double red;
+}
+
+section h1::after {
+  content: "🐱‍💻";
+}
+
+section h1::before {
+  content: "🧉";
+}
+
+.container {
+  height: 200px;
+  /* background-color: rgb(120, 21, 21); */
+  background-image: url(https://picsum.photos/200);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.generico {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  margin: auto;
+}
+
+.generico::before {
+  content: "";
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-color: #15c355;
+}
+
+.generico::after {
+  content: "";
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-color: #ce0e0e;
+}
+
+#img-especial {
+  float: right;
+  opacity: 0.85;
+}
+
+ul li {
+  list-style: none;
+  border: 1px solid red;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+.link-btn {
+  background-color: rgb(1, 1, 148);
+  color: white;
+  text-decoration: none;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+ul li:first-child {
+  background-color: rgb(201, 191, 189)
+}
+
+.link-btn:hover {
+  color: rgb(189, 195, 201);
+  cursor: default;
+  background-color: rgb(45, 45, 206);
+}
+
+#section_overflow {
+  /* width: 12em; */
+  /* height: 100px; */
+  overflow: auto;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+#section_text_overflow {
+  background-color: yellowgreen;
+  width: 500px;
+}
+
+#section_text_overflow::first-line {
+  color: rgb(239, 40, 14);
+  font-variant: small-caps;
+}

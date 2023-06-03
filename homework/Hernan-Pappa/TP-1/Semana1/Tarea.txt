@@ -1,0 +1,11 @@
+Tarea 1: Crear una página web personal
+
+Instrucciones:
+
+- Crear una nueva página web utilizando HTML.
+- Incluye una estructura básica con las etiquetas <html>, <head> y <body>.
+- Utiliza etiquetas de encabezado (<h1>, <h2>) y párrafos (<p>) para presentarte a ti mismo/a y compartir algunos detalles sobre tus intereses y pasatiempos.
+- Agrega al menos una imagen que te represente utilizando la etiqueta <img>.
+ 
+Como buenos programadores, les va a tocar investigar siempre por su cuenta
+tarea 2: buscar informacion sobre la etiqueta <ul></ul> y los <li></li>, como se utilizan y agregarlos a su página

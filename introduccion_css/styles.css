@@ -1,0 +1,37 @@
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+  color: rgb(124, 5, 5);
+  background-color: cornflowerblue;
+  background-image: url(https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Facea5551-26e6-444f-82f7-600319b32eed%2Fread.png?table=block&id=dddb94fc-f177-477f-819b-59b85ab9aa65&spaceId=9bbcaac7-139f-4589-8b85-af65592df621&width=250&userId=c757c052-df67-4464-a2b8-0a719d09569f&cache=v2);
+}
+
+p {
+  color: blueviolet;
+  background: #102c3d;
+}
+
+#parrafo_especial {
+  color: blue;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 800;
+  /* background-color: transparent; */
+  background-color: bisque;
+}
+
+.parrafo_grupo_especial {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  background-color: aqua;
+}
+
+ul {
+  background-color: #99cd3239;
+}
+
+.menu a {
+  color: aliceblue;
+  background-color: rgba(22, 175, 45, 0.195);
+}

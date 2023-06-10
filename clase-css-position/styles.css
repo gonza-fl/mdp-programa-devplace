@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 3px solid black;
+}
+
+html {
+  border: 0px;
+}
+
+body {
+  border-color: blueviolet;
+}
+
+#container {
+  background-color: cadetblue;
+  height: 200px;
+  position: static;
+}
+
+#red {
+  height: 100px;
+  width: 200px;
+  background-color: brown;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+#blue {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+
+#white {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  position: relative;
+}

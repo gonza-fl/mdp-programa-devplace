@@ -10,36 +10,42 @@ html {
 
 body {
   border-color: blueviolet;
+
+}
+
+h1 {
+  position: sticky;
+  background-color: pink;
+  top: 0;
+  z-index: 15;
 }
 
 #container {
   background-color: cadetblue;
-  height: 200px;
-  position: static;
+  margin-top: 5%;
+  position: relative;
+  height: 500px;
+  /* overflow: scroll; */
+
 }
 
-#red {
+/* #red {
   height: 100px;
   width: 200px;
   background-color: brown;
   position: absolute;
   top: 50px;
   left: 50px;
-}
+  display: none;
+} */
+
 
 #blue {
-  height: 100px;
-  width: 100px;
-  background-color: blue;
-  position: absolute;
-  top: 0px;
-  left: 10px;
-}
-
-
-#white {
+  border: 0;
   width: 100px;
   height: 100px;
-  background-color: #fff;
-  position: relative;
+  background-color: #232bca;
+  position: sticky;
+  top: 10px;
+  z-index: 14;
 }

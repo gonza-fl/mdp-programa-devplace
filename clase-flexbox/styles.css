@@ -1,0 +1,56 @@
+div {
+  border: 1px solid black;
+}
+
+#padre {
+  width: 100%;
+  height: 500px;
+  padding: 0;
+  background-color: rgba(185, 9, 185, 0.667);
+  display: flex;
+  /* flex-direction: row; */
+  /* distribuye los items (o hijos) en el main axis */
+  justify-content: space-evenly;
+
+  /* distribuye los items (o hijos) en el croos axis */
+  align-items: start;
+  flex-wrap: wrap;
+
+  /* align-content: space-evenly; */
+  /* gap: 4rem; */
+  column-gap: 4rem;
+
+}
+
+.hijo {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  background-color: bisque;
+  background-image: url(https://picsum.photos/200);
+  background-position: center;
+  background-size: contain;
+  opacity: 0.5;
+
+}
+
+.hijo-1 {
+  order: 1;
+  /* align-self: flex-end; */
+}
+
+#hijo-2 {
+  order: 1;
+}
+
+#hijo-3 {
+  order: 0;
+}
+
+#hijo-4 {
+  order: 1;
+}
+
+#hijo-5 {
+  order: 1;
+}

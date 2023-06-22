@@ -1,0 +1,37 @@
+#padre {
+  background-color: tomato;
+  display: grid;
+  grid-template-areas: ". header null"
+    "nav article ads"
+    "footer footer footer";
+  grid-template-rows: 100px 500px 100px;
+  grid-template-columns: 100px 1fr 100px;
+  gap: 5px;
+}
+
+#padre * {
+  background-color: bisque;
+  border: 1px solid;
+}
+
+#hijo-1 {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+}
+
+#hijo-2 {
+  grid-area: nav;
+}
+
+#hijo-3 {
+  grid-area: article;
+}
+
+#hijo-4 {
+  grid-area: ads;
+}
+
+#hijo-5 {
+  grid-area: footer;
+}

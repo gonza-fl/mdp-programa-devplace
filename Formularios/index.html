@@ -10,24 +10,26 @@
 
 <body>
 
+  <!-- <section class="form__container"> -->
+  <h3>Formulario de contacto</h3>
   <form>
-    <label for="name">Nombre</label>
+    <label for="name">Nombre:</label>
     <input type="text" name="user_name" id="name">
-    <label for="pass">Contraseña</label>
+    <label for="pass">Contraseña:</label>
     <input type="password" name="user_pass" id="pass">
-    <label for="file">Archivo</label>
-    <input type="file" name="cv_user" id="file">
-
-    <label for="cars">Choose a car:</label>
-
+    <label for="file">Archivo:</label>
+    <input type="file" name="cv_user" id="file" requireds>
+    <label for="cars">Elije un auto</label>
     <select name="cars" id="cars">
       <option value="volvo">Volvo</option>
       <option value="saab">Saab</option>
-      <option value="mercedes">Mercedes</option>
+      <option value="mercedes" selected>Mercedes</option>
       <option value="audi">Audi</option>
       <option value="fiat">Fiat</option>
     </select>
+    <input type="submit" value="Enviar">
   </form>
+  <!-- </section> -->
 </body>
 
 </html>

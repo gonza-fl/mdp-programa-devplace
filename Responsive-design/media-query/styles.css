@@ -1,0 +1,31 @@
+body {
+  font-size: 16px;
+}
+
+.img-fondo {
+  width: 500px;
+  /* height: 500px; */
+  background-color: bisque;
+  background-image: url(https://picsum.photos/200/300);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: aliceblue;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+    font-size: 22px;
+  }
+
+  .img-fondo {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: red;
+    font-size: 22px;
+  }
+}

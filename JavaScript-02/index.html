@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <title>JavaScript 02</title>
@@ -7,10 +7,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -18,8 +20,14 @@
     <!-- place navbar here -->
     <h1>Sistema Control de asistencia</h1>
   </header>
-  <main>
+  <main class="container">
     <button onclick="ingresarAlumno()">Añadir Alumno</button>
+    <button onclick="mostrarAlumnos()">Mostrar Alumnos</button>
+    <button onclick="disparar()">Fuegooo!!!</button>
+    <ul id="contenedorListaAlumnos">
+
+    </ul>
+    <a href="http://" target="_blank"></a>
   </main>
   <footer>
     <!-- place footer here -->
@@ -33,9 +41,11 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   <script>
     let alumnoNumero = 0
-    const cantidadAlumnos = 27
+    const cantidadAlumnos = 10
     const listaAlumnos = []
 
     function ingresarAlumno() {
@@ -47,7 +57,6 @@
         console.log(`Alumno ${nombreAlumno} presente`)
         console.log(`Alumnos ingresados ${alumnoNumero} de ${cantidadAlumnos}`)
         listaAlumnos.push(nombreAlumno)
-        console.log(listaAlumnos)
       }
     }
 
@@ -68,7 +77,44 @@
      * Operador Logico
     */
 
+    function mostrarAlumnos() {
+      let indice = 0
+      const ul = document.getElementById('contenedorListaAlumnos')
+      ul.className = 'list-group bg-danger'
+      ul.innerHTML = ''
+      while (indice < listaAlumnos.length) {
+        const alumno = listaAlumnos[indice]
+        ul.innerHTML += `<li class="list-group-item">${alumno} </li>`
+        indice++
+      }
+      //termina el bucle
+    }
 
+  </script>
+
+  <script>
+    function disparar(frase, num) {
+      // let resultado = num * 2
+      // alert(frase + ' resultado: ' + resultado)
+      // Swal.fire('The Internet?', 'That thing is still around?', 'error')
+
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Something went wrong!',
+        footer: '<a href="https://sweetalert2.github.io/#download" taget="_blank">Why do I have this issue?</a>'
+      })
+    }
+
+    /**
+     * numero++ <- esto seria como decirle a js:
+     * let resultado = numero
+     * numero = numero + 1
+
+     * ++numero <- esto seria como decirle a js:
+     * let resultado = numero + 1
+     * numero = numero + 1
+    */
   </script>
 
 

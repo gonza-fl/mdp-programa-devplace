@@ -45,7 +45,7 @@
               <!-- Cart items will be dynamically added here -->
 
             </ul>
-            <p class="mt-3">Total: $0.00</p>
+            <p id="cart-price" class="mt-3">Total: $0.00</p>
             <div class="row align-items-end">
               <button class="btn btn-success col">Buy</button>
               <button class="btn btn-danger mt-2 col">Clear Cart</button>
@@ -62,6 +62,7 @@
     <a href="#" class="text-white mx-2"><i class="fab fa-tiktok"></i></a>
   </footer>
 
+  <!-- TEMPLATE CARD PRODUCTO -->
   <template id="template-galery-productItem">
     <div class="col-md-4 mb-4">
       <div class="card">
@@ -76,6 +77,7 @@
     </div>
   </template>
 
+  <!-- TEMPLATE LI CARRITO -->
   <template id="template-cart-productItem">
     <li class="list-group-item">
       <span class="cart-product-title">${title}</span>

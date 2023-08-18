@@ -5,11 +5,13 @@ const $ = document;
 const cart = [];
 
 const productsGalery = $.getElementById('products_galery');
+
 productsGalery.addEventListener('click', (e) => {
   const node = e.target;
-  if (node.classList.contains('btn')) {
+  if (node.classList.contains('addToCartBTN')) {
     addToCart(node.dataset.id);
   }
+  e.stopPropagation();
 });
 
 function renderProducts() {
@@ -32,8 +34,8 @@ function renderProducts() {
 }
 
 function addToCart(id) {
-  const productFound = products.find((product) => product.id === parseInt(id));
   const productCartList = $.getElementById('productCartList');
+  const productFound = products.find((product) => product.id === parseInt(id));
   cart.push(productFound);
 
   const template = $.querySelector('#template-cart-productItem').content;
@@ -52,13 +54,13 @@ function addToCart(id) {
   productCartList.innerHTML = '';
   productCartList.appendChild(fragment);
 
-  const initialValue = 0;
+  const initialValueToCartPrice = 0;
 
-  const cartPrice = cart.reduce(
+  const totalCartPrice = cart.reduce(
     (acc, product) => acc + product.price,
-    initialValue
+    initialValueToCartPrice
   );
-  console.log('🚀 ~ file: index.js:56 ~ addToCart ~ cartPrice:', cartPrice);
+  $.getElementById('cart-price').innerText = 'Total: $' + totalCartPrice;
 }
 
 function main() {

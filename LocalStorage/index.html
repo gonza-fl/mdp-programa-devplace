@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejercicio LocalStorage</title>
+</head>
+
+<body>
+  <form id="createDivForm">
+    <label for=""> Nombre </label>
+    <input name="firstName" id="inputFirstName" type="text" placeholder="Ingrese su nombre" />
+
+    <label for=""> Apellido </label>
+    <input name="lastName" id="inputLastName" type="text" placeholder="Ingrese su apellido" />
+
+    <label for=""> Background </label>
+    <input name="bgColor" id="inputBgColor" type="color" />
+
+    <label for="">Font Color </label>
+    <input name="fontColor" id="inputFontColor" type="color" />
+
+    <label for=""> Size </label>
+    <input name="fontSize" id="inputFontSize" type="range" min="18" max="50" />
+    <input type="submit" value="Crear">
+  </form>
+
+  <section id="renderDiv"></section>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

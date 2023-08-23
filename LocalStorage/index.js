@@ -1,12 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
   const userDivOptions = JSON.parse(localStorage.getItem('userDivOptions'));
-  const firstName = userDivOptions.firstName;
-  const lastName = userDivOptions.lastName;
-  const bgColor = userDivOptions.bgColor;
-  const fontColor = userDivOptions.fontColor;
-  const fontSize = userDivOptions.fontSize;
   if (userDivOptions) {
+    const firstName = userDivOptions.firstName;
+    const lastName = userDivOptions.lastName;
+    const bgColor = userDivOptions.bgColor;
+    const fontColor = userDivOptions.fontColor;
+    const fontSize = userDivOptions.fontSize;
     renderDiv(firstName, lastName, bgColor, fontColor, fontSize);
+  } else {
+    renderDiv();
   }
 });
 
@@ -14,16 +16,21 @@ const form = document.getElementById('createDivForm');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  renderDiv();
+  firstName = document.getElementById('inputFirstName').value;
+  lastName = document.getElementById('inputLastName').value;
+  bgColor = document.getElementById('inputBgColor').value;
+  fontColor = document.getElementById('inputFontColor').value;
+  fontSize = document.getElementById('inputFontSize').value;
+  renderDiv(firstName, lastName, bgColor, fontColor, fontSize);
 });
 
-function renderDiv(firstName, lastName, bgColor, fontColor, fontSize) {
-  firstName = firstName || document.getElementById('inputFirstName').value;
-  lastName = lastName || document.getElementById('inputLastName').value;
-  bgColor = bgColor || document.getElementById('inputBgColor').value;
-  fontColor = fontColor || document.getElementById('inputFontColor').value;
-  fontSize = fontSize || document.getElementById('inputFontSize').value;
-
+function renderDiv(
+  firstName = 'Nombre',
+  lastName = 'Apellido',
+  bgColor = '#000',
+  fontColor = '#fafafa',
+  fontSize = 25
+) {
   const options = {
     firstName,
     lastName,

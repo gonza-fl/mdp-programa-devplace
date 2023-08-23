@@ -1,20 +1,20 @@
 const listaUsuarios = [
-  {
-    nombreUsuario: 'Adrian',
-    claveUsuario: '123456',
-  },
-  {
-    nombreUsuario: 'Joel',
-    claveUsuario: '123456',
-  },
-  {
-    nombreUsuario: 'Juli',
-    claveUsuario: '123456',
-  },
-  {
-    nombreUsuario: 'Dai',
-    claveUsuario: '123456',
-  },
+  // {
+  //   nombreUsuario: 'Adrian',
+  //   claveUsuario: '123456',
+  // },
+  // {
+  //   nombreUsuario: 'Joel',
+  //   claveUsuario: '123456',
+  // },
+  // {
+  //   nombreUsuario: 'Juli',
+  //   claveUsuario: '123456',
+  // },
+  // {
+  //   nombreUsuario: 'Dai',
+  //   claveUsuario: '123456',
+  // },
 ];
 
 //capturar botón
@@ -28,6 +28,7 @@ formUsuario.addEventListener('submit', (evento) => {
   evento.preventDefault();
   crearUsuario();
   mostrarListaUsuarios();
+  evento.stopPropagation();
 });
 
 //Pide datos al usuario y introduce un nuevo usuario (obj) a la lista de usuarios

@@ -1,5 +1,7 @@
 import { products } from './data.js';
 
+// document.addEventListener('DOMContentLoaded', saludar);
+
 const $ = document;
 
 const cart = [];

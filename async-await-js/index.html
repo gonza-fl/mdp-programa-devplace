@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header class="container-fluid d-flex  align-items-center justify-content-around">
+    <!-- place navbar here -->
+    <span>Rick&MortyWiky</span>
+    <nav class="navbar navbar-expand navbar-light bg-light">
+      <div class="nav navbar-nav">
+        <a class="nav-item nav-link active" href="#" aria-current="page">Link 1 <span
+            class="visually-hidden">(current)</span></a>
+        <a class="nav-item nav-link" href="#">Link 2</a>
+      </div>
+    </nav>
+  </header>
+  <main class="container-fluid">
+    <div class="d-flex justify-content-center">
+      <h1>
+        Proyecto de practica con Rick and Morty
+      </h1>
+    </div>
+
+    <section class="container" id="galery">
+
+    </section>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+
+
+  <template id="cardCharTemplate">
+    <div class="card" style="width: 18rem;">
+      <img src=${image} class="card-img-top" alt=${alt}>
+      <div class="card-body">
+        <h5 class="card-title">${name}</h5>
+        <ul>
+          <li class="list-group-item" id="status">${status}</li>
+          <li class="list-group-item" id="species">${species}</li>
+          <li class="list-group-item" id="gender">${gender}</li>
+          <li class="list-group-item" id="origin">${origin}</li>
+          <li class="list-group-item" id="location">${location}</li>
+        </ul>
+        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+      </div>
+    </div>
+  </template>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+
+  <script type="module" src="./index.js"></script>
+
+</body>
+
+</html>
